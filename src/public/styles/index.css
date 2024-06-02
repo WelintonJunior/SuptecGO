@@ -1,0 +1,26 @@
+body {
+  overflow: hidden;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  animation: loop 1s linear infinite;
+}
+
+.boxEsquerda {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+   .boxEsquerda {
+    display: none;
+   }
+}
+
+@keyframes loop {
+  100% {
+    transform: rotate(90deg);
+  }
+}
